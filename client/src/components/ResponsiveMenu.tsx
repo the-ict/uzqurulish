@@ -264,15 +264,21 @@ export default function ResponsiveMenu() {
 
             <div className="mt-3 px-2 space-y-1">
               {userMenuItems.map((item) => (
-                <Link
+                <div
                   key={item.id}
-                  to={item.path}
                   className="flex items-center px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    if(item.id === "logout") {
+                      authFunctions.logout();
+                      setIsOpen(false);
+                    }else {
+                      window.location.href = item.path;
+                    }
+                  }}
                 >
                   {item.icon}
                   <span className="ml-3">{item.label}</span>
-                </Link>
+                </div>
               ))}
             </div>
 

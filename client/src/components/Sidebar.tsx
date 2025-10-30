@@ -65,7 +65,7 @@ export default function Sidebar({ open, setOpen }: { open: boolean; setOpen: (v:
         </nav>
         <div className="p-4 border-t border-gray-200">
           <button className="flex items-center text-gray-600 hover:text-red-500 transition cursor-pointer" onClick={() => authFunctions.logout()}>
-            <LogOut size={14} className="mr-2" /> Logout
+            <LogOut size={14} className="mr-2" /> Chiqish
           </button>
         </div>
       </aside>

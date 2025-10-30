@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Play, CheckCircle, Star, Clock, X } from 'lucide-react';
-import tutorialVideo from '../assets/tutorials/tutorialvideo.mp4';
+// import tutorialVideo from '../assets/tutorials/';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -212,8 +212,8 @@ const HeroSection = () => {
                   }
                 }}
               >
-                <source src={tutorialVideo} type="video/quicktime" />
-                <source src={tutorialVideo} type="video/mp4" />
+                {/* <source src={tutorialVideo} type="video/quicktime" />
+                <source src={tutorialVideo} type="video/mp4" /> */}
                 Your browser does not support the video tag.
               </video>
             </div>
