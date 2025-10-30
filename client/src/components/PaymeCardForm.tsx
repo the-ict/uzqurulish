@@ -7,8 +7,6 @@ const PaymeCardForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Card Number:", cardNumber);
-    console.log("Expiry Date:", expiryDate);
   };
 
   const handleCardNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {

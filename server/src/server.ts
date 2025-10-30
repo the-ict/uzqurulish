@@ -6,16 +6,12 @@ import { Server } from 'socket.io';
 
 const startServer = async () => {
   try {
-    // Test database connection
     await testConnection();
 
-    // Sync database models
     await sequelize.sync({ alter: true });
 
-    // Create HTTP server
     const server = createServer(app);
 
-    // Initialize Socket.IO
     const io = new Server(server, {
       cors: {
         origin: process.env.CLIENT_URL || "http://localhost:5173",
@@ -23,7 +19,6 @@ const startServer = async () => {
       }
     });
 
-    // Start server
     const port = config.port;
     server.listen(port, () => {
       console.log(`Server is running on port ${port}`);
