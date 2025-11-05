@@ -27,11 +27,6 @@ Platforma foydalanuvchilarga:
 - Zoning (hududiy rejalashtirish) maslahatchisi  
 - Ruxsatnomalarni olish jarayonini kuzatish  
 
-### 💰 To‘lov Tizimi
-- Payme orqali xavfsiz to‘lovlar  
-- Obuna paketlari va tariflar  
-- To‘lovlar tarixini ko‘rish  
-
 ### 📊 Hisobotlar va Analitika
 - Loyihalar bo‘yicha batafsil hisobotlar  
 - Faollik monitoringi  
